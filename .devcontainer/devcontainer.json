@@ -1,26 +1,19 @@
 {
   "name": "Django + Postgres Dev Container",
-
   "dockerComposeFile": "../docker-compose.yml",
-
   "service": "web",
-
   "workspaceFolder": "/app",
-
   "customizations": {
     "vscode": {
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
       },
       "extensions": [
-            "ms-python.python",
-            "ms-python.vscode-pylance",
-            "ms-azuretools.vscode-docker"
-        ]
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker"
+      ]
     }
-  },
-  "features": {
-    "docker-in-docker": "latest"
   },
   "remoteUser": "vscode"
 }
