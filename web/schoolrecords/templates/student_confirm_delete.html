@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { margin-top: 10px; }
+        button { padding: 8px 12px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #c82333; }
+        a { margin-left: 10px; text-decoration: none; color: #6c757d; }
+    </style>
+</head>
+<body>
+    <h1>Delete Student</h1>
+    <p>Are you sure you want to delete the record for "{{ student.name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm Delete</button>
+        <a href="{% url 'student_list' %}">Cancel</a>
+    </form>
+</body>
+</html>
